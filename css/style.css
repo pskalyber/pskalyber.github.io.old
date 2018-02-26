@@ -1,0 +1,39 @@
+
+
+body {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	font-size: 14px;
+	line-height: 1.8;
+	background-color: #ffffff;
+	height: 100%;
+	color: #000000;
+}
+
+a.nav-link.active {
+	font-weight: 600;
+}
+
+p,
+td {
+	text-align: justify;
+}
+
+.container {
+	max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	height: 52px;
+	width: 100%;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color:#fbfbfb;
+	border-top: 1px solid #e0e0e0;
+}
