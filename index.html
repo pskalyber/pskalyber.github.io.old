@@ -30,6 +30,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	crossorigin="anonymous"></script>
+<script src="./js/custom.js" type="text/javascript"></script>
 <link rel="stylesheet" href="./css/bootstrap-simplex.css">
 <!--http://bootswatch.com/simplex/-->
 <link rel="stylesheet" href="./css/style.css">
@@ -353,47 +354,4 @@
 			Sangkeun Park (sk.park@kaist.ac.kr) All rights reserved.</p>
 	</footer>
 </body>
-
-
 </html>
-
-<script>
-	// Highlight clicked item
-	$(".nav-link").click(function() {
-		$(".nav-link").removeClass("active");
-		$(this).addClass("active");
-		$('.navbar-collapse').collapse('hide');
-		
-		//template_id = window.location.hash.substring(1);
-		template_id = $(this).attr("target-menu");//.substring(1);
-		console.log(template_id);
-		updateView(template_id);
-	});
-
-	function updateView(template_id) {
-		$(".menu_template").each(function() {
-			if ($(this).attr("id") == template_id) {
-				$(this).show();
-			} else {
-				$(this).hide();
-			}
-		});
-	}
-
-	console.log(window.location.hash);
-	if (window.location.hash == "") {
-		updateView("menu_home");
-		console.log("Displaying home");
-	} else {
-		target_menu = "menu_" + window.location.hash.substring(1);
-		//template_id = $(this).attr("target-menu");//.substring(1);
-		updateView(target_menu);
-
-		$(".nav-link").removeClass("active");
-		$(".nav-link").each(function() {
-			if ($(this).attr('target-menu') == target_menu) {
-				$(this).addClass("active");
-			}
-		});
-	}
-</script>
