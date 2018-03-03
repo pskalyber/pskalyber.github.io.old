@@ -362,7 +362,8 @@
 	$(".nav-link").click(function() {
 		$(".nav-link").removeClass("active");
 		$(this).addClass("active");
-
+		$('.navbar-collapse').collapse('hide');
+		
 		//template_id = window.location.hash.substring(1);
 		template_id = $(this).attr("target-menu");//.substring(1);
 		console.log(template_id);
