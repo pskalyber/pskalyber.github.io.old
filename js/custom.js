@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 
 	$(".nav-link").click(function() {
-		//only give an active class when the clicked menu is not CURRICULUM VITAE
+		// only give an active class when the clicked menu is not CURRICULUM VITAE
 		if ($(this).attr("target-menu") == "menu_cv") {
 			return;
 		} else {
@@ -28,4 +28,8 @@ $(document).ready(function() {
 			});
 		}
 	});
+
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 });
