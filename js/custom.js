@@ -30,25 +30,19 @@ $(document).ready(function() {
 	$('.navbar-collapse').collapse('hide');
 
 	$(".nav-link").click(function() {
-		// only give an active class when the clicked menu is not CURRICULUM
-		// VITAE
-		if ($(this).attr("target-menu") == "menu_cv") {
-			return;
-		} else {
-			$(".nav-link").removeClass("active");
-			$(this).addClass("active");
+		$(".nav-link").removeClass("active");
+		$(this).addClass("active");
 
-			$('.navbar-collapse').collapse('hide');
+		$('.navbar-collapse').collapse('hide');
 
-			menu_id = $(this).attr("target-menu");
-			$(".menu_template").each(function() {
-				if ($(this).attr("id") == menu_id) {
-					$(this).show();
-				} else {
-					$(this).hide();
-				}
-			});
-		}
+		menu_id = $(this).attr("target-menu");
+		$(".menu_template").each(function() {
+			if ($(this).attr("id") == menu_id) {
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+		});
 	});
 
 	$(function() {
