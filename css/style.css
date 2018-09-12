@@ -17,8 +17,9 @@ body {
 }
 
 a.navbar-brand {
-	font-family: 'Permanent Marker', cursive;
+	/* font-family: 'Permanent Marker', cursive; */
 	font-size: 24px;
+	font-weight: 600;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
@@ -27,13 +28,34 @@ a.nav-link.active {
 	font-weight: 600;
 }
 
-p,
-td {
+p {
 	text-align: justify;
+}
+
+h5 {
+	font-weight: 600;
 }
 
 .container {
 	max-width: 960px;
+}
+
+.bg-light {
+    border-color: #ffffff;
+}
+
+.table th,
+.table td {
+	border-color: #ffffff;
+}
+.table thead th {
+	border-bottom: #ffffff;
+}
+.table td.year {
+	padding-left: 0px;
+}
+.table td.publication {
+	padding-right: 0px;
 }
 
 .footer {
