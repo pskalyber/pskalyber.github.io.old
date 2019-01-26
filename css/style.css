@@ -40,6 +40,15 @@ h5 {
 	max-width: 960px;
 }
 
+.activity_img {
+	background-size: cover;
+	background-position: center center;
+	height:250px;
+	border-style:solid;
+	border-color: #ffffff;
+	border-width: 3px;
+}
+
 .bg-light {
     border-color: #ffffff;
 }
