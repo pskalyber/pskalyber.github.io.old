@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
 html {
 	height: 100%;
 }
@@ -60,11 +58,12 @@ h5 {
 .table thead th {
 	border-bottom: #ffffff;
 }
-.table td.year {
-	padding-left: 0px;
-}
-.table td.publication {
-	padding-right: 0px;
+
+.research_image {
+	width: 215px;
+	height: 160px;
+	border: 1px;
+	border-radius: 5px;
 }
 
 .footer {
