@@ -5,13 +5,17 @@ html {
 
 body {
 	position: relative;
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-bottom: 80px;
 	font-size: 14px;
 	line-height: 1.8;
 	background-color: #ffffff;
 	min-height: 100%;
 	color: #000000;
+}
+
+.bs-docs-section {
+	margin-top: 20px;
 }
 
 a.navbar-brand {
