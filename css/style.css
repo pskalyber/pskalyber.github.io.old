@@ -42,15 +42,6 @@ h5 {
 	max-width: 1024px;
 }
 
-.activity_img {
-	background-size: cover;
-	background-position: center center;
-	height:250px;
-	border-style:solid;
-	border-color: #ffffff;
-	border-width: 3px;
-}
-
 .bg-light {
     border-color: #ffffff;
 }
@@ -68,6 +59,13 @@ h5 {
 	height: 160px;
 	border: 1px;
 	border-radius: 5px;
+}
+
+.activity_image {
+	width: 215px;
+	height: 160px;
+	border: 1px;
+	border-radius: 0px;
 }
 
 .portfolio_image {
